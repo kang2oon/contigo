@@ -14,6 +14,11 @@ $(window).load(function(){
             $(this).removeClass('active');
         }
     });
+
+    $('.scroll').click(function(){
+        $('html, body').animate({scrollTop:0},1000);
+        //$('html, body').scrollTop(0);
+    });
 });
 
 $(window).scroll(function(){
@@ -21,7 +26,9 @@ $(window).scroll(function(){
     height = $(window).scrollTop();
     if(height >= 103){
         $('header').addClass('blur');
+        $('.scroll').removeClass('hide');
     }else{
         $('header').removeClass('blur');
+        $('.scroll').addClass('hide');
     }
 });
