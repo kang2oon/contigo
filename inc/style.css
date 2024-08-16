@@ -88,7 +88,7 @@ header .menu_wrapper h1{font-size:24px;}
 
 @media screen and (max-width : 1024px) {
 	.container{width:calc(100% - 80px);}
-    .main h2{font-size:48px;width:calc(100% - 64px);}
+    .main h2{font-size:48px;width:calc(100% - 40px);}
     .brand{background-position:600px 70%;padding:200px 0;}
     .brand h2, .brand h3{width:calc(100% - 80px);margin-left:auto;margin-right:auto;}
     .brand h2{font-size:36px;}
