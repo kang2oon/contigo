@@ -1,0 +1,90 @@
+*{font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;box-sizing:border-box;}
+
+html,body{position:relative;width:100%;height:100%;margin:0;padding:0;color:#232323;color:var(--color_base);}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;vertical-align:middle;}
+
+header{position:fixed;top:0;padding:20px 0;width:100%;z-index:100;color:#fff;}
+footer{padding:36px 0;width:100%;background:#000;color:#fff;}
+article{min-height:1000px;width:100%;}
+header.blur{backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:rgba(0,0,0,.5);}
+
+.container{position:relative;width:1140px;margin:0 auto;}
+.menu_wrapper{display:flex;justify-content:space-between;align-items:center;}
+.menu_wrapper h1{margin:0;letter-spacing:-1px;font-size:32px;}
+header .menu_wrapper h1{font-size:24px;}
+.menu_wrapper ul{display:flex;justify-content:space-between;}
+.menu_wrapper li{font-size:16px;}
+.menu_wrapper li a{padding:0 6px;}
+.menu_wrapper li+li{margin-left:34px;}
+.menu_wrapper li.active a{font-weight:700;box-shadow: inset 0 -10px 0 rgba(255,138,51,.5);}
+.menu_wrapper li a.btn_cart{background-color:#fff;color:#000;padding:8px 16px;border-radius:4px;}
+.footer_wraper{margin:8px 0;}
+.com_name{font-weight:600;}
+.com_info{margin-top:16px;font-size:14px;font-weight:300;}
+.com_info ul{display:flex;justify-content:start;}
+.com_info li{line-height:.8;margin:8px 0;}
+.com_info li+li{margin-left:8px;padding-left:8px;border-left:1px solid;border-color:#ccc;border-color:var(--color_bordergray);}
+
+.main{display:flex;flex-direction:column;justify-content:center;align-items:center;background:url(../images/bg_main.jpg);width:100%;height:calc(100vh + 1px);background-size:cover;background-repeat:no-repeat;background-position:center center;object-fit:cover;background-color:#000;color:#fff;position:relative;}
+.main h2{font-size:64px;text-align:center;line-height:1.5;}
+.brand{display:flex;flex-direction:column;justify-content:center;background-color:#000;background-image:url(../images/bg-story-2.png);background-size:cover;background-position:1200px 70%;background-repeat:no-repeat;background-blend-mode:hard-light;color:#fff;padding:240px 0;}
+.brand h2{font-size:48px;text-align:center;line-height:1.5;margin:0;padding:0;}
+.brand h3{font-size:36px;text-align:center;line-height:1.4;margin:80px 0 0;padding:0;}
+.mimicry{padding:160px 0;}
+.mimicry h2{font-size:48px;margin:40px 0 48px;padding:0;}
+.mimicry p{font-size:22px;margin:0;padding:0;color:#6f7785;line-height:1.4;}
+.mimicry .shop{margin-top:48px;}
+.mimicry .shop a{display:inline-block;font-size:20px;padding:12px 24px;border-radius:8px;color:#fff;}
+.mimicry .shop a+a{margin-left:4px;}
+.mimicry .shop a.naver{background:#03c95a;}
+.mimicry .shop a.coupang{background:#d72e24;}
+.mimicry .product{position:absolute;bottom:0;right:0;width:320px;}
+.feature{background-color:#dbf0f8;padding:240px 0 120px;background-image:url(../images/bg_feature.png);background-repeat:no-repeat;background-position:-120px -120px;}
+.feature h2{font-size:44px;margin:0 0 36px;padding:0;line-height:1.3;}
+.feature h3{font-size:24px;margin:0 0 120px;padding:0;color:#616161;font-weight:400;}
+.feature li+li{margin-top:80px;}
+.feature li .num{font-size:24px;color:#49d4db;font-weight:700;}
+.feature li .tit{font-size:30px;margin:16px 0 24px;font-weight:700;}
+.feature li .memo{font-size:20px;line-height:1.5;color:#616161;}
+.review{padding:120px 0;}
+.review h2{font-size:44px;margin:0 0 36px;padding:0;line-height:1.3;}
+.review .review_wraper{display:flex;justify-content:space-between;}
+.review .review_wraper>div{position:relative;width:calc(33.3333% - 12px);border:1px solid;border-color:#ccc;border-color:var(--color_bordergray);border-radius:8px;padding:24px 24px 104px;font-size:18px;line-height:1.4;}
+.review .review_wraper .author{position:absolute;bottom:24px;width:calc(100% - 48px);font-size:16px;border-top:1px solid;border-color:#eaeaea;border-color:var(--color_lightgray);padding-top:16px;}
+.review .review_wraper .author span{display:inline-block;margin-left:8px;color:#4099d3;}
+.recommond{padding:0;}
+.recommond h2{font-size:44px;margin:0 0 36px;padding:0;line-height:1.3;}
+.recommond h3{font-size:24px;margin:0 0 64px;padding:0;color:#616161;font-weight:400;line-height:1.4;}
+.slider{height:300px;margin:auto;overflow:hidden;position:relative;width:100%;}
+.slider::before, .slider::after{background:linear-gradient(to right,white 0%,rgba(255,255,255,0) 100%);content:"";height:300px;width:160px;position:absolute;z-index:2;}
+.slider::after{right:0;top:0;transform:rotateZ(180deg);}
+.slider::before{left:0;top:0;}
+.slider .slide-track{
+    -webkit-animation:scroll 60s linear infinite;
+            animation:scroll 60s linear infinite;
+    display:flex;width:calc(450px * 18);
+}
+.slider .slide-track:hover{animation-play-state:paused;}
+.slider .slide{height:300px;width:430px;display:flex;align-items:center;justify-content:center;border-radius:16px;overflow:hidden;margin-left:20px;}
+@keyframes scroll {
+    0%{transform:translateX(0);}
+    100%{transform:translateX(calc(-450px * 9));}
+}
+.recommond .rc_wraper{margin:24px 0 160px;display:flex;flex-wrap:wrap;justify-content:space-between;}
+.recommond .rc_wraper>div{width:calc(50% - 10px);margin-top:80px;}
+.recommond .rc_wraper .tit{font-size:32px;letter-spacing:-1px;font-weight:700;}
+.recommond .rc_wraper .memo{font-size:22px;line-height:1.5;color:#616161;margin-top:16px;}
+.bottom{padding:160px 0 160px;background-image:url(../images/bg_mimicry.jpg);background-repeat:no-repeat;background-position:100% 100%;background-size:cover;}
+.bottom h2{font-size:48px;margin:0 0 16px;padding:0;line-height:1.3;}
+.bottom h3{font-size:24px;margin:0 0 48px;padding:0;color:#616161;font-weight:400;line-height:1.4;}
+.bottom .discription{font-size:18px;margin:0 0 64px;line-height:1.4;}
+.bottom a{display:inline-block;font-size:18px;padding:16px 24px;background-color:#fff;border-radius:8px;}
+
+
+
+
+@media screen and (max-width : 768px) {
+	
+}
