@@ -120,7 +120,7 @@ header .menu_wrapper h1{font-size:24px;}
 
 @media screen and (max-width : 600px){
     .container{width:calc(100% - 40px);}
-    .main h2{font-size:34px}
+    .main h2{font-size:34px;letter-spacing:-.5px;}
     .main h2 span{display:block;}
     .brand{background-position:80px 240px;padding:160px 0;}
     .brand h2{font-size:28px;}
